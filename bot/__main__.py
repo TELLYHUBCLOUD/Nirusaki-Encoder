@@ -27,14 +27,14 @@ async def help_message(bot, message):
   if message.chat.id not in Config.AUTH_USERS:
     return
   await adduser(message)
-  txt = "**▻ A Siʍᴩlᴇ DB Quᴇuᴇ Vidᴇᴏ Enᴄᴏdᴇr Bᴏᴛ\n▻ Crᴇᴀᴛᴇd By Nirusᴀᴋi (Pᴏwᴇrᴇd By R136ᴀ1)\n► Cᴀn Cᴏʍᴩrᴇss, Gᴇnᴇrᴀᴛᴇ Sᴀʍᴩlᴇ, Sᴄrᴇᴇnshᴏᴛs, Eᴛᴄ.\n► This Bᴏᴛ Is Privᴀᴛᴇ**"
+  txt = "**▻ A Siʍᴩlᴇ DB Quᴇuᴇ Vidᴇᴏ Enᴄᴏdᴇr Bᴏᴛ\n▻ Crᴇᴀᴛᴇd By TELLYCLOUD | Bots (Pᴏwᴇrᴇd By TG Uploader)\n► Cᴀn Cᴏʍᴩrᴇss, Gᴇnᴇrᴀᴛᴇ Sᴀʍᴩlᴇ, Sᴄrᴇᴇnshᴏᴛs, Eᴛᴄ.\n► This Bᴏᴛ Is Privᴀᴛᴇ**"
   await bot.send_message(
         chat_id=message.chat.id,
         text=txt,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Jᴏin Fiᴇrᴄᴇnᴇᴛwᴏrᴋ', url='https://t.me/Fiercenetwork')
+                    InlineKeyboardButton('Jᴏin ME ❤️', url='https://t.me/TELLYCLOUD_BOTS')
                 ]
             ]
         ),
@@ -55,37 +55,37 @@ async def help_message(bot, message):
 @bot.on_message(filters.incoming & filters.command(["bash"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await exec_message_f(bot, message)
       
 @bot.on_message(filters.incoming & filters.command(["vshot"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD*")    
     await vshots(bot, message)      
     
 @bot.on_message(filters.incoming & filters.command(["eval"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await eval_message_f(bot, message)
       
 @bot.on_message(filters.incoming & filters.command(["renew"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await renew(message)
     
 @bot.on_message(filters.incoming & filters.command(["sysinfo"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await sysinfo(message)      
     
 @bot.on_message(filters.incoming & filters.command(["getcode"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
     await get_ffmpeg(bot, message)
     
 @bot.on_message(filters.incoming & filters.command(["encode"]))
@@ -101,25 +101,25 @@ async def help_message(bot, message):
 @bot.on_message(filters.incoming & filters.command(["setcode"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
     await changeffmpeg(bot, message)
     
 @bot.on_message(filters.incoming & filters.command(["logs"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
     await message.reply_document('Encoder@Log.txt')
     
 @bot.on_message(filters.incoming & filters.command(["info"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
     await mediainfo(bot, message)
     
 @bot.on_message(filters.incoming & filters.command(["add"]))      
 async def help_message(bot, message):
    if message.from_user.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
    b = message.text
    i = b.split(" ", maxsplit=1)[1]
    await add_word(str(i))
@@ -127,7 +127,7 @@ async def help_message(bot, message):
 @bot.on_message(filters.incoming & filters.command(["getlist"]))      
 async def help_message(bot, message):
    if message.from_user.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
    b = words.find({})
    string = ''
    l = 0
@@ -139,7 +139,7 @@ async def help_message(bot, message):
 @bot.on_message(filters.incoming & filters.command(["pop"]))      
 async def help_message(bot, message):
    if message.from_user.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
    b = message.text
    i = int(b.split(" ", maxsplit=1)[1])
    bcc = words.find({})
@@ -152,7 +152,7 @@ async def help_message(bot, message):
 @bot.on_message(filters.incoming & filters.command(["clear"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")
     data.clear()
     list_handler.clear()
     queue.delete_many({})
@@ -161,31 +161,31 @@ async def help_message(bot, message):
 @bot.on_message(filters.incoming & filters.command(["ul"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await upload_dir(bot, message)
     
 @bot.on_message(filters.incoming & filters.command(["dl"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await download_dir(bot, message)
     
 @bot.on_message(filters.incoming & filters.command(["ulmode"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await get_type(bot, message)
     
 @bot.on_message(filters.incoming & filters.command(["setul"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await changemode(bot, message)
     
 @bot.on_message(filters.incoming & filters.command(["simp"]))
 async def help_message(bot, message):
     if message.chat.id not in Config.AUTH_USERS:
-      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @Nirusaki**")    
+      return await message.reply_text("**You Are Not Authorised To Use This Bot Contact @TELLYCLOUD**")    
     await sample(bot, message)         
 
 async def checkup():
