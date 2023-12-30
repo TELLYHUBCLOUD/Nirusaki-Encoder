@@ -1,11 +1,12 @@
-pyrogram
+pyrogram1==0.1.0
 html_telegraph_poster
 TgCrypto
 psutil
-pymongo[srv]
+pymongo[srv]==1.1.0
 aiohttp
 python-dotenv
 hachoir
 anitopy
 pyromod
 asyncio
+ffmpeg==1.4
