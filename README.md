@@ -3,7 +3,7 @@
 This Is A Very Over Powered Telegram Bot It Can Encode Video With Your Desired FFMPEG Settings
 It Keep Encoding Even After Restart Due To The Database
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy=https://github.com/TELLYHUBCLOUD/VideoEncoder)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new-app?template=https://github.com/TELLYHUBCLOUD/VideoEncoder)
 
 # Commands
 ```
